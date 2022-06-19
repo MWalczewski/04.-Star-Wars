@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./class.js"></script>
+    <script src="./script2.js"></script>
+    <div class="container">
+      <div>
+        <img class="logo" src="./images/SW_logo.png" />
+      </div>
+
+      <div id="buttons"></div>
+      <div id="functional-inputs">
+        <input id="search" type="search" name="search" placeholder="Search" />
+        <select class="page-size" onchange="changePageSize(event)">
+          <option>2</option>
+          <option>5</option>
+          <option>10</option>
+          <option>15</option>
+          <option>20</option>
+        </select>
+        <!-- <button id="prev-button" onclick="prevPage()">Previous Page</button>
+        <button id="next-button" onclick="nextPage()">Next Page</button> -->
+      </div>
+      <div id="data-table">
+        <table id="main-table">
+          <thead id="thead"></thead>
+          <tbody id="table"></tbody>
+        </table>
+        <table id="secondary-table">
+          <thead id="details-thead"></thead>
+          <tbody id="details-table"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
